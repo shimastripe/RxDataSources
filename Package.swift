@@ -8,8 +8,8 @@ let package = Package(
     .iOS(.v9), .tvOS(.v9)
   ],
   products: [
-    .library(name: "RxDataSources", targets: ["RxDataSources"]),
-    .library(name: "Differentiator", targets: ["Differentiator"])
+    .library(name: "RxDataSources", type: .dynamic, targets: ["RxDataSources"]),
+    .library(name: "Differentiator", targets: ["Differentiator"]),
   ],
   dependencies: [
     .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0"))
